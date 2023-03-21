@@ -41,7 +41,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(code = HttpStatus.BAD_REQUEST)
     public BaseResponse handleMethodArgumentNotValid(MethodArgumentNotValidException ex) {
         log.error("handleMethodArgumentNotValid : " + ex.getMessage());
-        return createResponse(ErrorCodes.SYSTEM_ERROR.getCode(), "Check your method argument.");
+        return createResponse(ErrorCodes.SYSTEM_ERROR.getCode(), "Input values is not valid.");
     }
 
     @ExceptionHandler(value = HttpMediaTypeNotAcceptableException.class)
