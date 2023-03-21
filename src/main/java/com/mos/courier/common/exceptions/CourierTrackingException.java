@@ -1,8 +1,10 @@
 package com.mos.courier.common.exceptions;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class CourierTrackingException extends Exception {
 
     private final String errorCode;
