@@ -9,9 +9,6 @@ import lombok.Setter;
 @Setter
 public class CourierMoveRequest extends BaseRequest {
 
-    @NotNull(message = "courierId must not be null")
-    private Long courierId;
-
     @NotNull(message = "lat must not be null")
     @Digits(integer = 2, fraction = 7, message = "lat must be valid")
     private Double lat;
